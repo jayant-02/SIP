@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            background-color: black;
+        }
+         .container{
+            display: flex;
+            justify-content: center;
+            height: 100vh;  
+        }
+        .items{
+            border: 10px dotted rgb(254, 254, 254);
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            display: flex;
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+           /* border-bottom-color:transparent ;*/
+            animation: moveBox 1.5s ease-in-out infinite;
+          
+        }
+        h6{
+            margin: 10px;
+        }
+        @keyframes moveBox{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(300px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="items items1"><h6>20 rupee doge to ek raz ki baat btaunga</h6></div>
+    </div>
+</body>
+</html>

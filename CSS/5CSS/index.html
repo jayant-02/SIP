@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 30px;
+        }
+        .items{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .items1:hover{
+            transform: translateX(100px);
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            background-color: rgba(255, 0, 221, 0.301);
+            transition-delay: 2s;
+        }
+        .items2:hover{
+            transform: translateY(80px);
+             transition-duration: 3s;
+             background-color: bisque;
+        }
+        .items3:hover{
+            background-color: darkorchid;
+            transform: scaleY(1.6);
+             transition-duration: 3s;
+        }
+        .items4:hover{
+             transform: rotate(30deg);
+              transition-duration: 3s;
+               transition-duration: 3s;
+               background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="items items1"> ONE </div>
+        <div class="items items2"> TWO </div>
+        <div class="items items3"> THREE</div>
+        <div class="items items4"> FOUR</div>
+        <div class="items items5"> FIVE</div>
+    </div>
+</body>
+</html>

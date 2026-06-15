@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actual use of grid</title>
+    <style>
+         .items{
+            border: 1px solid black;
+            height: 600px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+         }
+         .container{
+            display: grid;
+          
+            grid-template-areas: 
+            "side nav2 nav"
+            "side last main"
+            "side last main"
+            "fifth fifth fifth";
+            gap: 10px;
+             
+         }
+         .item1{
+            background-color: yellow;
+            grid-area: nav;
+         }
+         .item2{
+            grid-area:nav2;
+         }
+         .item3{
+            background-color:rebeccapurple;
+             grid-area:side;
+         }
+         .item4{
+            background-color: red;
+            grid-area: main;
+            
+         }
+         .item5{
+            background-color: yellowgreen;
+            grid-area: fifth;
+         }
+         .item6{
+            background-color: brown;
+            grid-area: last;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">Box 1</div>
+        <div class="items item2">Box 2</div>
+        <div class="items item3">Box 3</div>
+        <div class="items item4">Box 4</div>
+        <div class="items item5" id="item5">Box 5</div>
+        <div class="items item6">Box 6</div>
+    </div>
+</body>
+</html>

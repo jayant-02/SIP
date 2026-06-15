@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+         .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+             animation: moveBox 1.5s ease-in-out infinite;
+        }
+        .items{
+            border: 3px dotted rgb(254, 254, 254);
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            display: flex;
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            border-bottom-color:transparent ;
+          
+        }
+        h5{
+              animation: moveBox2 1.5s ease-in-out infinite;
+        }
+        @keyframes moveBox{
+            from { transform: rotate(0deg);}
+            to { transform: rotate(360deg);}
+        }
+         @keyframes moveBox2{
+            from { transform: rotate(0deg);}
+            to { transform: rotate(-360deg);}
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="items items1"><h5>Please wait... </h5></div>
+    </div>
+</body>
+</html>
